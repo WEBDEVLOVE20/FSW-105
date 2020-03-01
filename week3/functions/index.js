@@ -11,24 +11,25 @@ function highestNum(nmbr1, nmbr2, nmbr3){
 
 }
 
-console.log(Math.max(10, 20, 30));
+console.log(Math.max(15, 90, 38));
 
 
 function oneNum(nmbr1){
 
     if(nmbr1 % 2 === 0){
-        console.log("even")
+        console.log("Even");
     } else {
-        console.log("odd")
+        console.log("Odd");
     } 
 }
-console.log(oneNum(7));
+oneNum(8);
 
-/*
-function str(){
-    var charct = str("How are you doing today?")
-    if(charct.length <= 25){
+
+function myFunction(strng1){
+    if(strng1.length <= 20){
+        console.log(strng1 + strng1);
+    } else {
+        console.log(strng1.slice(0, strng1.length / 2));
+    }
 }
-}
-console.log()
-*/
+myFunction("Quality is not an act, it is a habit.");
