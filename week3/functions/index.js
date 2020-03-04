@@ -1,17 +1,15 @@
 function sum(nmbr1, nmbr2){
-    return nmbr1 + nmbr2
+    return (nmbr1 + nmbr2);
 }
-
-var result = sum(25, 25)
-console.log(result);
+console.log(sum(25, 25));
 
 
 
-function highestNum(nmbr1, nmbr2, nmbr3){
-
+function highestNum(nmbr1, nmbr2, nmbr3) {
+    return(Math.max(nmbr1, nmbr2, nmbr3));
 }
+console.log(highestNum(150, 90, 38));
 
-console.log(Math.max(15, 90, 38));
 
 
 function oneNum(nmbr1){
