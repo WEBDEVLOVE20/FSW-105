@@ -35,7 +35,7 @@ var peopleWhoWantToSeeMadMaxFuryRoad = [
     }
 ];
 
-for(var i = 0; i < peopleWhoWantToSeeMadMaxFuryRoad.length; i++){
+for(var i = 0; i < peopleWhoWantToSeeMadMaxFuryRoad.length; i++) {
     if(peopleWhoWantToSeeMadMaxFuryRoad[i].age >= 18) {
         console.log("old enough");
      } else {
@@ -44,7 +44,7 @@ for(var i = 0; i < peopleWhoWantToSeeMadMaxFuryRoad.length; i++){
 }
 
 
-for(var i = 0; i < peopleWhoWantToSeeMadMaxFuryRoad.length; i++){
+for(var i = 0; i < peopleWhoWantToSeeMadMaxFuryRoad.length; i++) {
     
     if(peopleWhoWantToSeeMadMaxFuryRoad[i].age >= 18) {
         console.log(peopleWhoWantToSeeMadMaxFuryRoad[i].name + " is old enough to see Mad Max.");
@@ -54,7 +54,7 @@ for(var i = 0; i < peopleWhoWantToSeeMadMaxFuryRoad.length; i++){
 }
 
 
-for(var i = 0; i < peopleWhoWantToSeeMadMaxFuryRoad.length; i++){
+for(var i = 0; i < peopleWhoWantToSeeMadMaxFuryRoad.length; i++) {
 var genderReview = (peopleWhoWantToSeeMadMaxFuryRoad[i].gender === "female") ? "HER" : "HIM";
     if(peopleWhoWantToSeeMadMaxFuryRoad[i].age >= 18) {
         console.log(peopleWhoWantToSeeMadMaxFuryRoad[i].name + " is old enough to see Mad Max Fury Road let " + genderReview + " in.");
@@ -65,34 +65,10 @@ var genderReview = (peopleWhoWantToSeeMadMaxFuryRoad[i].gender === "female") ? "
 
 
 
-for(var i = 0; i < 101; i++){
+for(var i = 0; i < 101; i++) {
     if([i] % 2 === 0){
         console.log([i] + " Even"); //I can remove [i] from console.log to remove number and leave only string, figured it was easier to read this way though.
     } else {
         console.log([i] + " Odd");
     }
 }
-
-
-/*
-var arrayOfArrays = [
-[2, 5, 3, 4, 3],
-[1, 1, 1, 1, 3],
-[9, 3, 4, 2]
-
-]
-
-for(var i = 0; i < arrayOfArrays.length; i++){
-    for(var j = 0; j < arrayOfArrays[i].length; j++){
-        if(arrayOfArrays[j] % 2 === 0)
-    }
-}
-
-
-
-*/
-
-
-
-
-
