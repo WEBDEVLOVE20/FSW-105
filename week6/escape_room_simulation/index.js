@@ -6,7 +6,7 @@ let hasKey = false;
 
 const playerName= readlineSync.question("Hello! What is your name? ");
 
-const intro = (`Welcome ${playerName} to the Escape Room Simulaton! In this game the goal is to find your way out of the locked room. Be careful, one wrong move and you're dead! Muahhahaha!`);
+const intro = (`Welcome ${playerName} to the Escape Room Simulation! In this game the goal is to find your way out of the locked room. Be careful, one wrong move and you're dead! Muahhahaha!`);
     console.log(intro);
 
 
@@ -33,6 +33,6 @@ while (isAlive == true){
     else if (gameMenuOptions == 3 && hasKey == true) {
         console.log (`Congratulations ${playerName}! You found the key and escaped the room! You are free!`);
         isAlive = false;
-    }
+    }   
 
 };
