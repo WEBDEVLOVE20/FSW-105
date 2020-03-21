@@ -81,18 +81,17 @@ console.log(produceProduct(8, 2));
 
 //#5
 
-printString = (firstName, lastName, age) => {
+printString = (firstName = "Jane", lastName = "Doe", age = 100) => {
     console.log("Hi " + firstName + " " + lastName + ", how does it feel to be " + age + "?");
 }
-printString("Jane", "Doe", 100);
+printString("Kat", "Stark", 40);
 
 //#6
 
-printString = (firstName, lastName, age) => {
-    console.log(`Hi ${firstName} ${lastName}, how does it feel to be ${age}?`)
-};
-printString("Jane", "Doe", 100);
-
+printString = (firstName = "Jane", lastName = "Doe", age = 100) => {
+    console.log(`Hi ${firstName} ${lastName}, how does it feel to be ${age}?`);
+}
+printString("Kat", "Stark", 40);
 
 //#7 
 
