@@ -31,7 +31,7 @@ while (isAlive == true){
         
     }
     else if (gameMenuOptions == 3 && hasKey == true) {
-        console.log (`Congratulations! You found the key and escaped the room! You are free!`);
+        console.log (`Congratulations ${playerName}! You found the key and escaped the room! You are free!`);
         isAlive = false;
     }
 
