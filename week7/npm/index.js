@@ -40,10 +40,9 @@ const creatures = [creatureOne, creatureTwo, creatureThree];
 
  function adventureGame() {
 
-
     while(player.health > 0) {
-    const info = readlineSync.keyInSelect(menuOptions, "What would you like to do? Select one of the following numbers that represents your action");
 
+    const info = readlineSync.keyInSelect(menuOptions, "What would you like to do? Select one of the following numbers that represents your action");
     if(menuOptions[info] === "Inventory") {
          console.log(` Player Name: ${player.name} \n Health Level: ${player.health} \n Inventory: ${player.rewards}`);
      } else if (menuOptions[info] === "Walk") {
@@ -55,22 +54,16 @@ const creatures = [creatureOne, creatureTwo, creatureThree];
             let creature = creatures[Math.floor(Math.random()*creatures.length)];
             console.log(`You ran into the ${creature.name}!`)
 
-
-
     const playerOpt = readlineSync.keyInSelect(battleOptions, "You have been confronted with an evil creature! Will you Attack or will you Run? Select one of the following numbers that represents your action");
 
-    
     if(battleOptions[playerOpt] === "Attack") {
     const attack = () => {
-
     let playerAttack = Math.floor(Math.random() + player.power);
     creature.health -= playerAttack
         console.log(`${player.name} hit with power of ${playerAttack}`);
-
     let creaturesAttack = Math.floor(Math.random() + creature.power);
     player.health -= creaturesAttack
         console.log(`${creature.name} hit with power of ${creaturesAttack}`);
-
     if (creature.health > 0 && player.health > 0) {
         attack();
     } else {
@@ -93,15 +86,12 @@ const creatures = [creatureOne, creatureTwo, creatureThree];
         if (running <= 2) {
             console.log("You have not escaped, the creature is attacking you!!")
             const attack = () => {
-
                 let creaturesAttack = Math.floor(Math.random() + creature.power);
                 player.health -= creaturesAttack
                     console.log(`${creature.name} hit with power of ${creaturesAttack}`);
-
                 let playerAttack = Math.floor(Math.random() + player.power);
                 creature.health -= playerAttack
                     console.log(`${player.name} hit with power of ${playerAttack}`);
-            
                 if (creature.health > 0 && player.health > 0) {
                     attack();
                 } else {
